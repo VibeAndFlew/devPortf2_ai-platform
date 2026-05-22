@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0a1a"/>
+      <stop offset="100%" stop-color="#140a28"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="blurBg">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="200" cy="600" r="220" fill="#7c3aed" opacity="0.04" filter="url(#blurBg)"/>
+
+  <!-- Top navigation -->
+  <rect x="0" y="0" width="1200" height="60" fill="rgba(15,10,26,0.95)" stroke="rgba(124,58,237,0.1)" stroke-width="1"/>
+  <rect x="24" y="16" width="28" height="28" rx="8" fill="url(#accent)"/>
+  <text x="32" y="34" font-family="monospace" font-size="12" fill="#fff" font-weight="bold">N</text>
+  <text x="60" y="34" font-family="sans-serif" font-size="14" fill="#e8e0f0" font-weight="700">NOVA AI</text>
+
+  <rect x="240" y="16" width="80" height="28" rx="6" fill="rgba(124,58,237,0.08)"/>
+  <text x="255" y="34" font-family="sans-serif" font-size="12" fill="#9a8ab0">Dashboard</text>
+  <rect x="330" y="16" width="80" height="28" rx="6" fill="rgba(124,58,237,0.2)"/>
+  <text x="343" y="34" font-family="sans-serif" font-size="12" fill="#fff" font-weight="600">Observability</text>
+  <rect x="420" y="16" width="80" height="28" rx="6" fill="rgba(124,58,237,0.08)"/>
+  <text x="435" y="34" font-family="sans-serif" font-size="12" fill="#9a8ab0">Logs</text>
+  <rect x="510" y="16" width="80" height="28" rx="6" fill="rgba(124,58,237,0.08)"/>
+  <text x="525" y="34" font-family="sans-serif" font-size="12" fill="#9a8ab0">Alerts</text>
+  <rect x="600" y="16" width="80" height="28" rx="6" fill="rgba(124,58,237,0.08)"/>
+  <text x="615" y="34" font-family="sans-serif" font-size="12" fill="#9a8ab0">Metrics</text>
+
+  <circle cx="1150" cy="30" r="14" fill="#2d1b4e" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <circle cx="1110" cy="30" r="8" fill="rgba(239,68,68,0.15)"/>
+  <circle cx="1110" cy="30" r="4" fill="#ef4444"/>
+
+  <!-- Header -->
+  <text x="24" y="96" font-family="sans-serif" font-size="22" fill="#e8e0f0" font-weight="700">Observability Dashboard</text>
+  <text x="24" y="118" font-family="sans-serif" font-size="13" fill="#9a8ab0">Real-time monitoring, tracing, and performance metrics.</text>
+
+  <!-- Status banner -->
+  <rect x="24" y="136" width="1152" height="40" rx="10" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <circle cx="50" cy="156" r="5" fill="#22c55e" filter="url(#glow)"/>
+  <text x="64" y="160" font-family="sans-serif" font-size="13" fill="#22c55e" font-weight="600">All Systems Operational</text>
+  <text x="240" y="160" font-family="sans-serif" font-size="12" fill="#9a8ab0">Uptime: 99.97% • Avg response: 142ms • Error rate: 0.3%</text>
+
+  <!-- Metrics row -->
+  <rect x="24" y="196" width="270" height="100" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="226" font-family="sans-serif" font-size="12" fill="#9a8ab0">Requests (24h)</text>
+  <text x="44" y="258" font-family="sans-serif" font-size="26" fill="#e8e0f0" font-weight="700">12,847</text>
+  <text x="190" y="258" font-family="sans-serif" font-size="12" fill="#22c55e">+8.2%</text>
+
+  <rect x="310" y="196" width="270" height="100" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="330" y="226" font-family="sans-serif" font-size="12" fill="#9a8ab0">Avg Latency</text>
+  <text x="330" y="258" font-family="sans-serif" font-size="26" fill="#e8e0f0" font-weight="700">142ms</text>
+  <text x="460" y="258" font-family="sans-serif" font-size="12" fill="#22c55e">-12ms</text>
+
+  <rect x="596" y="196" width="270" height="100" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="616" y="226" font-family="sans-serif" font-size="12" fill="#9a8ab0">P99 Latency</text>
+  <text x="616" y="258" font-family="sans-serif" font-size="26" fill="#e8e0f0" font-weight="700">890ms</text>
+  <text x="746" y="258" font-family="sans-serif" font-size="12" fill="#f59e0b">+45ms</text>
+
+  <rect x="882" y="196" width="294" height="100" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="902" y="226" font-family="sans-serif" font-size="12" fill="#9a8ab0">Error Rate</text>
+  <text x="902" y="258" font-family="sans-serif" font-size="26" fill="#e8e0f0" font-weight="700">0.3%</text>
+  <text x="1040" y="258" font-family="sans-serif" font-size="12" fill="#22c55e">-0.1%</text>
+
+  <!-- Main chart area -->
+  <rect x="24" y="316" width="760" height="280" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="348" font-family="sans-serif" font-size="15" fill="#e8e0f0" font-weight="600">Request Latency (p50, p95, p99)</text>
+  <text x="44" y="366" font-family="sans-serif" font-size="11" fill="#9a8ab0">Last 24 hours</text>
+
+  <!-- Legend -->
+  <rect x="600" y="336" width="12" height="3" rx="2" fill="#7c3aed"/>
+  <text x="616" y="340" font-family="sans-serif" font-size="10" fill="#9a8ab0">p50</text>
+  <rect x="650" y="336" width="12" height="3" rx="2" fill="#f59e0b"/>
+  <text x="666" y="340" font-family="sans-serif" font-size="10" fill="#9a8ab0">p95</text>
+  <rect x="700" y="336" width="12" height="3" rx="2" fill="#ef4444"/>
+  <text x="716" y="340" font-family="sans-serif" font-size="10" fill="#9a8ab0">p99</text>
+
+  <!-- Chart grid -->
+  <rect x="44" y="380" width="720" height="195" rx="6" fill="rgba(124,58,237,0.02)" stroke="rgba(124,58,237,0.06)" stroke-width="1"/>
+  <line x1="60" y1="415" x2="750" y2="415" stroke="rgba(124,58,237,0.06)"/>
+  <line x1="60" y1="450" x2="750" y2="450" stroke="rgba(124,58,237,0.06)"/>
+  <line x1="60" y1="485" x2="750" y2="485" stroke="rgba(124,58,237,0.06)"/>
+  <line x1="60" y1="520" x2="750" y2="520" stroke="rgba(124,58,237,0.06)"/>
+
+  <!-- p50 line -->
+  <polyline points="70,530 120,510 170,520 220,490 270,480 320,460 370,470 420,440 470,420 520,400 570,410 620,380 670,390 720,370" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+  <!-- p95 line -->
+  <polyline points="70,540 120,520 170,530 220,500 270,480 320,470 370,480 420,450 470,430 520,420 570,430 620,400 670,420 720,390" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6,3"/>
+  <!-- p99 line -->
+  <polyline points="70,550 120,535 170,545 220,520 270,490 320,490 370,500 420,470 470,450 520,440 570,450 620,420 670,440 720,410" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,3"/>
+
+  <text x="70" y="585" font-family="sans-serif" font-size="10" fill="#9a8ab0">00:00</text>
+  <text x="240" y="585" font-family="sans-serif" font-size="10" fill="#9a8ab0">06:00</text>
+  <text x="440" y="585" font-family="sans-serif" font-size="10" fill="#9a8ab0">12:00</text>
+  <text x="640" y="585" font-family="sans-serif" font-size="10" fill="#9a8ab0">18:00</text>
+
+  <!-- Right panels -->
+  <rect x="804" y="316" width="372" height="135" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="824" y="348" font-family="sans-serif" font-size="15" fill="#e8e0f0" font-weight="600">Service Health</text>
+
+  <rect x="824" y="362" width="332" height="24" rx="6" fill="rgba(34,197,94,0.08)"/>
+  <circle cx="840" cy="374" r="4" fill="#22c55e"/>
+  <text x="852" y="378" font-family="sans-serif" font-size="11" fill="#e8e0f0">Chat Service</text>
+  <text x="1120" y="378" font-family="sans-serif" font-size="11" fill="#22c55e">45ms</text>
+
+  <rect x="824" y="392" width="332" height="24" rx="6" fill="rgba(34,197,94,0.08)"/>
+  <circle cx="840" cy="404" r="4" fill="#22c55e"/>
+  <text x="852" y="408" font-family="sans-serif" font-size="11" fill="#e8e0f0">Workflow Engine</text>
+  <text x="1120" y="408" font-family="sans-serif" font-size="11" fill="#22c55e">120ms</text>
+
+  <rect x="824" y="422" width="332" height="24" rx="6" fill="rgba(59,130,246,0.08)"/>
+  <circle cx="840" cy="434" r="4" fill="#3b82f6"/>
+  <text x="852" y="438" font-family="sans-serif" font-size="11" fill="#e8e0f0">Knowledge Base</text>
+  <text x="1120" y="438" font-family="sans-serif" font-size="11" fill="#3b82f6">230ms</text>
+
+  <rect x="804" y="466" width="372" height="130" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="824" y="498" font-family="sans-serif" font-size="15" fill="#e8e0f0" font-weight="600">Recent Alerts</text>
+
+  <rect x="824" y="512" width="332" height="28" rx="6" fill="rgba(245,158,11,0.08)"/>
+  <circle cx="840" cy="526" r="4" fill="#f59e0b"/>
+  <text x="852" y="527" font-family="sans-serif" font-size="11" fill="#f59e0b">High latency on /api/chat (890ms)</text>
+
+  <rect x="824" y="545" width="332" height="28" rx="6" fill="rgba(34,197,94,0.08)"/>
+  <circle cx="840" cy="559" r="4" fill="#22c55e"/>
+  <text x="852" y="560" font-family="sans-serif" font-size="11" fill="#22c55e">Deploy v1.0.0 completed successfully</text>
+
+  <rect x="824" y="578" width="332" height="28" rx="6" fill="rgba(59,130,246,0.08)"/>
+  <circle cx="840" cy="592" r="4" fill="#3b82f6"/>
+  <text x="852" y="593" font-family="sans-serif" font-size="11" fill="#3b82f6">Agent "CodeReviewer" restarted</text>
+
+  <!-- Bottom: Trace / distributed tracing -->
+  <rect x="24" y="616" width="1152" height="110" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="646" font-family="sans-serif" font-size="15" fill="#e8e0f0" font-weight="600">Distributed Trace — Request #req_84a72f</text>
+
+  <!-- Trace spans -->
+  <rect x="44" y="662" width="1112" height="50" rx="6" fill="rgba(124,58,237,0.03)"/>
+
+  <rect x="80" y="670" width="120" height="34" rx="6" fill="#7c3aed" opacity="0.7"/>
+  <text x="92" y="690" font-family="sans-serif" font-size="9" fill="#fff">HTTP GET /chat</text>
+
+  <rect x="210" y="670" width="90" height="34" rx="6" fill="#3b82f6" opacity="0.7"/>
+  <text x="222" y="690" font-family="sans-serif" font-size="9" fill="#fff">Auth</text>
+
+  <rect x="310" y="670" width="140" height="34" rx="6" fill="#8b5cf6" opacity="0.7"/>
+  <text x="325" y="690" font-family="sans-serif" font-size="9" fill="#fff">Chat Service</text>
+
+  <rect x="460" y="670" width="200" height="34" rx="6" fill="#22c55e" opacity="0.7"/>
+  <text x="480" y="690" font-family="sans-serif" font-size="9" fill="#fff">AI Provider (GPT-4o)</text>
+
+  <rect x="670" y="670" width="100" height="34" rx="6" fill="#f59e0b" opacity="0.7"/>
+  <text x="685" y="690" font-family="sans-serif" font-size="9" fill="#fff">KB RAG</text>
+
+  <rect x="780" y="670" width="160" height="34" rx="6" fill="#a78bfa" opacity="0.7"/>
+  <text x="800" y="690" font-family="sans-serif" font-size="9" fill="#fff">Stream Response</text>
+
+  <!-- Trace timing -->
+  <text x="1050" y="676" font-family="monospace" font-size="9" fill="#9a8ab0">0ms</text>
+  <text x="1100" y="676" font-family="monospace" font-size="9" fill="#9a8ab0">142ms</text>
+  <text x="1050" y="700" font-family="monospace" font-size="9" fill="#9a8ab0">──────────▶</text>
+</svg>

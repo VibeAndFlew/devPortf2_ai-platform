@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0a1a"/>
+      <stop offset="100%" stop-color="#140a28"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="blurBg">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="1100" cy="100" r="200" fill="#7c3aed" opacity="0.06" filter="url(#blurBg)"/>
+  <circle cx="100" cy="650" r="250" fill="#8b5cf6" opacity="0.05" filter="url(#blurBg)"/>
+
+  <!-- Sidebar Navigation -->
+  <rect x="0" y="0" width="220" height="750" fill="rgba(15,10,26,0.95)" stroke="rgba(124,58,237,0.1)" stroke-width="1"/>
+  <rect x="20" y="24" width="28" height="28" rx="8" fill="url(#accent)"/>
+  <text x="28" y="42" font-family="monospace" font-size="12" fill="#fff" font-weight="bold">N</text>
+  <text x="56" y="42" font-family="sans-serif" font-size="14" fill="#e8e0f0" font-weight="700">NOVA AI</text>
+
+  <rect x="16" y="80" width="188" height="36" rx="8" fill="rgba(124,58,237,0.1)"/>
+  <text x="36" y="102" font-family="sans-serif" font-size="13" fill="#a78bfa">Dashboard</text>
+
+  <rect x="16" y="124" width="188" height="36" rx="8" fill="rgba(124,58,237,0.2)"/>
+  <text x="36" y="146" font-family="sans-serif" font-size="13" fill="#fff" font-weight="600">Analytics</text>
+
+  <text x="36" y="178" font-family="sans-serif" font-size="13" fill="#9a8ab0">Chat</text>
+  <text x="36" y="210" font-family="sans-serif" font-size="13" fill="#9a8ab0">Workflows</text>
+  <text x="36" y="242" font-family="sans-serif" font-size="13" fill="#9a8ab0">Agents</text>
+  <text x="36" y="274" font-family="sans-serif" font-size="13" fill="#9a8ab0">Knowledge</text>
+  <text x="36" y="306" font-family="sans-serif" font-size="13" fill="#9a8ab0">Prompts</text>
+  <text x="36" y="338" font-family="sans-serif" font-size="13" fill="#9a8ab0">Settings</text>
+
+  <rect x="16" y="650" width="188" height="80" rx="10" fill="rgba(124,58,237,0.08)"/>
+  <text x="36" y="676" font-family="sans-serif" font-size="11" fill="#9a8ab0">API Usage Today</text>
+  <text x="36" y="700" font-family="sans-serif" font-size="18" fill="#e8e0f0" font-weight="700">$1.24</text>
+  <text x="90" y="700" font-family="sans-serif" font-size="11" fill="#22c55e">-8%</text>
+
+  <!-- Main Content -->
+  <text x="244" y="50" font-family="sans-serif" font-size="22" fill="#e8e0f0" font-weight="700">Analytics Dashboard</text>
+  <text x="244" y="70" font-family="sans-serif" font-size="13" fill="#9a8ab0">Track usage, costs, and performance metrics across your AI workspace.</text>
+
+  <!-- Date selector -->
+  <rect x="950" y="36" width="220" height="36" rx="8" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="970" y="58" font-family="sans-serif" font-size="13" fill="#e8e0f0">Last 30 Days</text>
+
+  <!-- Metrics cards -->
+  <rect x="244" y="96" width="225" height="110" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="264" y="128" font-family="sans-serif" font-size="13" fill="#9a8ab0">Total Requests</text>
+  <text x="264" y="162" font-family="sans-serif" font-size="26" fill="#e8e0f0" font-weight="700">84,721</text>
+  <text x="370" y="162" font-family="sans-serif" font-size="12" fill="#22c55e">+12.3%</text>
+  <rect x="264" y="180" width="185" height="3" rx="2" fill="rgba(124,58,237,0.15)"/>
+  <rect x="264" y="180" width="130" height="3" rx="2" fill="url(#accent)"/>
+
+  <rect x="489" y="96" width="225" height="110" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="509" y="128" font-family="sans-serif" font-size="13" fill="#9a8ab0">Tokens Processed</text>
+  <text x="509" y="162" font-family="sans-serif" font-size="26" fill="#e8e0f0" font-weight="700">4.2M</text>
+  <text x="610" y="162" font-family="sans-serif" font-size="12" fill="#22c55e">+8.7%</text>
+  <rect x="509" y="180" width="185" height="3" rx="2" fill="rgba(59,130,246,0.15)"/>
+  <rect x="509" y="180" width="145" height="3" rx="2" fill="url(#blue)"/>
+
+  <rect x="734" y="96" width="225" height="110" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="754" y="128" font-family="sans-serif" font-size="13" fill="#9a8ab0">Avg Latency</text>
+  <text x="754" y="162" font-family="sans-serif" font-size="26" fill="#e8e0f0" font-weight="700">342ms</text>
+  <text x="860" y="162" font-family="sans-serif" font-size="12" fill="#f59e0b">+5ms</text>
+  <rect x="754" y="180" width="185" height="3" rx="2" fill="rgba(245,158,11,0.15)"/>
+  <rect x="754" y="180" width="100" height="3" rx="2" fill="url(#orange)"/>
+
+  <rect x="979" y="96" width="193" height="110" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="999" y="128" font-family="sans-serif" font-size="13" fill="#9a8ab0">Error Rate</text>
+  <text x="999" y="162" font-family="sans-serif" font-size="26" fill="#e8e0f0" font-weight="700">0.8%</text>
+  <text x="1100" y="162" font-family="sans-serif" font-size="12" fill="#22c55e">-0.2%</text>
+  <rect x="999" y="180" width="153" height="3" rx="2" fill="rgba(34,197,94,0.15)"/>
+  <rect x="999" y="180" width="140" height="3" rx="2" fill="url(#green)"/>
+
+  <!-- Chart -->
+  <rect x="244" y="226" width="530" height="280" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="264" y="258" font-family="sans-serif" font-size="15" fill="#e8e0f0" font-weight="600">Request Volume</text>
+  <text x="264" y="276" font-family="sans-serif" font-size="12" fill="#9a8ab0">Daily API requests over time</text>
+
+  <rect x="264" y="290" width="490" height="195" rx="6" fill="rgba(124,58,237,0.02)" stroke="rgba(124,58,237,0.06)" stroke-width="1"/>
+  <line x1="280" y1="325" x2="740" y2="325" stroke="rgba(124,58,237,0.08)"/>
+  <line x1="280" y1="360" x2="740" y2="360" stroke="rgba(124,58,237,0.08)"/>
+  <line x1="280" y1="395" x2="740" y2="395" stroke="rgba(124,58,237,0.08)"/>
+  <line x1="280" y1="430" x2="740" y2="430" stroke="rgba(124,58,237,0.08)"/>
+
+  <!-- Area chart -->
+  <path d="M280,470 L300,440 L320,450 L340,420 L360,430 L380,390 L400,400 L420,360 L440,370 L460,340 L480,350 L500,310 L520,320 L540,290 L560,300 L580,270 L600,280 L620,250 L640,260 L660,240 L680,250 L700,230 L720,240 L740,220 L740,470 Z" fill="url(#accent)" opacity="0.08"/>
+  <polyline points="280,470 300,440 320,450 340,420 360,430 380,390 400,400 420,360 440,370 460,340 480,350 500,310 520,320 540,290 560,300 580,270 600,280 620,250 640,260 660,240 680,250 700,230 720,240 740,220" fill="none" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="280" y="500" font-family="sans-serif" font-size="10" fill="#9a8ab0">May 1</text>
+  <text x="440" y="500" font-family="sans-serif" font-size="10" fill="#9a8ab0">May 15</text>
+  <text x="690" y="500" font-family="sans-serif" font-size="10" fill="#9a8ab0">Jun 1</text>
+
+  <!-- Right panels -->
+  <rect x="794" y="226" width="378" height="130" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="814" y="258" font-family="sans-serif" font-size="15" fill="#e8e0f0" font-weight="600">Top Models</text>
+  <rect x="814" y="275" width="338" height="20" rx="6" fill="rgba(124,58,237,0.1)"/>
+  <rect x="814" y="275" width="180" height="20" rx="6" fill="url(#accent)" opacity="0.8"/>
+  <text x="824" y="289" font-family="sans-serif" font-size="11" fill="#fff">GPT-4o</text>
+  <text x="1120" y="289" font-family="sans-serif" font-size="11" fill="#e8e0f0">52%</text>
+  <rect x="814" y="300" width="338" height="20" rx="6" fill="rgba(59,130,246,0.1)"/>
+  <rect x="814" y="300" width="110" height="20" rx="6" fill="url(#blue)" opacity="0.8"/>
+  <text x="824" y="314" font-family="sans-serif" font-size="11" fill="#fff">Claude 3.5</text>
+  <text x="1120" y="314" font-family="sans-serif" font-size="11" fill="#e8e0f0">28%</text>
+  <rect x="814" y="325" width="338" height="20" rx="6" fill="rgba(34,197,94,0.1)"/>
+  <rect x="814" y="325" width="60" height="20" rx="6" fill="url(#green)" opacity="0.8"/>
+  <text x="824" y="339" font-family="sans-serif" font-size="11" fill="#fff">GPT-4</text>
+  <text x="1120" y="339" font-family="sans-serif" font-size="11" fill="#e8e0f0">20%</text>
+
+  <rect x="794" y="372" width="378" height="134" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="814" y="402" font-family="sans-serif" font-size="15" fill="#e8e0f0" font-weight="600">Cost Breakdown</text>
+  <text x="814" y="425" font-family="sans-serif" font-size="12" fill="#9a8ab0">OpenAI</text>
+  <text x="1000" y="425" font-family="sans-serif" font-size="12" fill="#e8e0f0">$42.30</text>
+  <text x="814" y="445" font-family="sans-serif" font-size="12" fill="#9a8ab0">Anthropic</text>
+  <text x="1000" y="445" font-family="sans-serif" font-size="12" fill="#e8e0f0">$18.20</text>
+  <text x="814" y="465" font-family="sans-serif" font-size="12" fill="#9a8ab0">Embedding</text>
+  <text x="1000" y="465" font-family="sans-serif" font-size="12" fill="#e8e0f0">$5.10</text>
+  <text x="814" y="485" font-family="sans-serif" font-size="12" fill="#9a8ab0" font-weight="600">Total</text>
+  <text x="1000" y="485" font-family="sans-serif" font-size="12" fill="#e8e0f0" font-weight="700">$65.60</text>
+  <line x1="814" y1="472" x2="1100" y2="472" stroke="rgba(124,58,237,0.15)"/>
+
+  <!-- Bottom panels -->
+  <rect x="244" y="526" width="360" height="200" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="264" y="558" font-family="sans-serif" font-size="15" fill="#e8e0f0" font-weight="600">Feedback Scores</text>
+  <circle cx="420" cy="600" r="40" fill="none" stroke="rgba(124,58,237,0.15)" stroke-width="6"/>
+  <circle cx="420" cy="600" r="40" fill="none" stroke="url(#accent)" stroke-width="6" stroke-dasharray="190" stroke-dashoffset="40" stroke-linecap="round" transform="rotate(-90 420 600)"/>
+  <text x="420" y="605" font-family="sans-serif" font-size="16" fill="#e8e0f0" font-weight="700" text-anchor="middle">87%</text>
+  <text x="420" y="630" font-family="sans-serif" font-size="11" fill="#9a8ab0" text-anchor="middle">Satisfaction</text>
+  <text x="290" y="660" font-family="sans-serif" font-size="12" fill="#22c55e">+5% vs last month</text>
+
+  <rect x="624" y="526" width="548" height="200" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="644" y="558" font-family="sans-serif" font-size="15" fill="#e8e0f0" font-weight="600">Recent Errors</text>
+  <rect x="644" y="575" width="508" height="32" rx="6" fill="rgba(220,38,38,0.08)"/>
+  <circle cx="660" cy="591" r="4" fill="#dc2626"/>
+  <text x="674" y="589" font-family="sans-serif" font-size="11" fill="#e8e0f0">Rate limit exceeded — GPT-4o API</text>
+  <text x="1060" y="589" font-family="sans-serif" font-size="11" fill="#9a8ab0">5 min ago</text>
+  <rect x="644" y="615" width="508" height="32" rx="6" fill="rgba(220,38,38,0.08)"/>
+  <circle cx="660" cy="631" r="4" fill="#dc2626"/>
+  <text x="674" y="629" font-family="sans-serif" font-size="11" fill="#e8e0f0">Timeout — Embedding generation</text>
+  <text x="1060" y="629" font-family="sans-serif" font-size="11" fill="#9a8ab0">23 min ago</text>
+  <rect x="644" y="655" width="508" height="32" rx="6" fill="rgba(220,38,38,0.08)"/>
+  <circle cx="660" cy="671" r="4" fill="#dc2626"/>
+  <text x="674" y="669" font-family="sans-serif" font-size="11" fill="#e8e0f0">Authentication failed — Claude API key expired</text>
+  <text x="1060" y="669" font-family="sans-serif" font-size="11" fill="#9a8ab0">1 hour ago</text>
+</svg>

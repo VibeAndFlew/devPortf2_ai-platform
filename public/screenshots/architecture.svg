@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0a1a"/>
+      <stop offset="100%" stop-color="#140a28"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="glass">
+      <feGaussianBlur stdDeviation="0" result="blur"/>
+      <feFlood flood-color="rgba(26,18,40,0.6)" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glass"/>
+      <feBlend in="glass" in2="SourceGraphic"/>
+    </filter>
+    <filter id="blurBg">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="rgba(124,58,237,0.4)"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="600" cy="375" r="300" fill="#7c3aed" opacity="0.04" filter="url(#blurBg)"/>
+  <circle cx="200" cy="150" r="180" fill="#8b5cf6" opacity="0.03" filter="url(#blurBg)"/>
+
+  <text x="36" y="36" font-family="sans-serif" font-size="20" fill="#e8e0f0" font-weight="700">Architecture Overview</text>
+  <text x="36" y="56" font-family="sans-serif" font-size="13" fill="#9a8ab0">System architecture of the NOVA AI Workflow OS</text>
+
+  <!-- Layer 1: Client -->
+  <rect x="36" y="80" width="1128" height="70" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <rect x="36" y="80" width="140" height="70" rx="12" fill="url(#accent)" opacity="0.15"/>
+  <text x="50" y="110" font-family="sans-serif" font-size="11" fill="#a78bfa" font-weight="600" transform="rotate(-90 50 110)">LAYER 1</text>
+  <text x="56" y="106" font-family="sans-serif" font-size="12" fill="#9a8ab0">Client Layer</text>
+  <text x="56" y="126" font-family="sans-serif" font-size="13" fill="#e8e0f0" font-weight="600">Next.js App Router • React 19 • Tailwind CSS v4 • Framer Motion</text>
+
+  <rect x="200" y="95" width="130" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="230" y="119" font-family="sans-serif" font-size="11" fill="#e8e0f0">Dashboard</text>
+
+  <rect x="345" y="95" width="130" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="380" y="119" font-family="sans-serif" font-size="11" fill="#e8e0f0">AI Chat</text>
+
+  <rect x="490" y="95" width="130" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="518" y="119" font-family="sans-serif" font-size="11" fill="#e8e0f0">Workflows</text>
+
+  <rect x="635" y="95" width="130" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="670" y="119" font-family="sans-serif" font-size="11" fill="#e8e0f0">Agents</text>
+
+  <rect x="780" y="95" width="130" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="810" y="119" font-family="sans-serif" font-size="11" fill="#e8e0f0">Knowledge</text>
+
+  <rect x="925" y="95" width="130" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="965" y="119" font-family="sans-serif" font-size="11" fill="#e8e0f0">Playground</text>
+
+  <!-- Arrow to Layer 2 -->
+  <line x1="600" y1="150" x2="600" y2="170" stroke="rgba(124,58,237,0.4)" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Layer 2: Server -->
+  <rect x="36" y="170" width="1128" height="70" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <rect x="36" y="170" width="140" height="70" rx="12" fill="url(#blue)" opacity="0.15"/>
+  <text x="50" y="200" font-family="sans-serif" font-size="11" fill="#60a5fa" font-weight="600" transform="rotate(-90 50 200)">LAYER 2</text>
+  <text x="56" y="196" font-family="sans-serif" font-size="12" fill="#9a8ab0">Server Layer</text>
+  <text x="56" y="216" font-family="sans-serif" font-size="13" fill="#e8e0f0" font-weight="600">React Server Components • API Routes • Server Actions • Middleware</text>
+
+  <rect x="200" y="185" width="180" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
+  <text x="240" y="209" font-family="sans-serif" font-size="11" fill="#e8e0f0">RSC Streaming</text>
+
+  <rect x="400" y="185" width="180" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
+  <text x="455" y="209" font-family="sans-serif" font-size="11" fill="#e8e0f0">API Routes</text>
+
+  <rect x="600" y="185" width="180" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
+  <text x="640" y="209" font-family="sans-serif" font-size="11" fill="#e8e0f0">Server Actions</text>
+
+  <rect x="800" y="185" width="180" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
+  <text x="850" y="209" font-family="sans-serif" font-size="11" fill="#e8e0f0">Middleware</text>
+
+  <!-- Arrow to Layer 3 -->
+  <line x1="600" y1="240" x2="600" y2="260" stroke="rgba(124,58,237,0.4)" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Layer 3: Services -->
+  <rect x="36" y="260" width="1128" height="70" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <rect x="36" y="260" width="140" height="70" rx="12" fill="url(#green)" opacity="0.15"/>
+  <text x="50" y="290" font-family="sans-serif" font-size="11" fill="#4ade80" font-weight="600" transform="rotate(-90 50 290)">LAYER 3</text>
+  <text x="56" y="286" font-family="sans-serif" font-size="12" fill="#9a8ab0">Service Layer</text>
+  <text x="56" y="306" font-family="sans-serif" font-size="13" fill="#e8e0f0" font-weight="600">Chat Service • Workflow Engine • Agent Orchestrator • Knowledge Base</text>
+
+  <rect x="200" y="275" width="150" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="240" y="299" font-family="sans-serif" font-size="11" fill="#e8e0f0">Chat Service</text>
+
+  <rect x="365" y="275" width="150" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="390" y="299" font-family="sans-serif" font-size="11" fill="#e8e0f0">Workflow Engine</text>
+
+  <rect x="530" y="275" width="150" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="555" y="299" font-family="sans-serif" font-size="11" fill="#e8e0f0">Agent Orches.</text>
+
+  <rect x="695" y="275" width="150" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="725" y="299" font-family="sans-serif" font-size="11" fill="#e8e0f0">Knowledge Base</text>
+
+  <rect x="860" y="275" width="150" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="895" y="299" font-family="sans-serif" font-size="11" fill="#e8e0f0">Vector Search</text>
+
+  <!-- Arrow to Layer 4 -->
+  <line x1="600" y1="330" x2="600" y2="350" stroke="rgba(124,58,237,0.4)" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Layer 4: AI Providers -->
+  <rect x="36" y="350" width="1128" height="70" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <rect x="36" y="350" width="140" height="70" rx="12" fill="url(#orange)" opacity="0.15"/>
+  <text x="50" y="380" font-family="sans-serif" font-size="11" fill="#fbbf24" font-weight="600" transform="rotate(-90 50 380)">LAYER 4</text>
+  <text x="56" y="376" font-family="sans-serif" font-size="12" fill="#9a8ab0">AI Provider Layer</text>
+  <text x="56" y="396" font-family="sans-serif" font-size="13" fill="#e8e0f0" font-weight="600">OpenAI • Anthropic • OpenRouter • Custom Models</text>
+
+  <rect x="200" y="365" width="180" height="40" rx="8" fill="rgba(0,0,0,0.5)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="260" y="389" font-family="sans-serif" font-size="11" fill="#10b981">OpenAI GPT-4o</text>
+
+  <rect x="400" y="365" width="180" height="40" rx="8" fill="rgba(0,0,0,0.5)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="455" y="389" font-family="sans-serif" font-size="11" fill="#f59e0b">Anthropic Claude</text>
+
+  <rect x="600" y="365" width="180" height="40" rx="8" fill="rgba(0,0,0,0.5)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="655" y="389" font-family="sans-serif" font-size="11" fill="#a78bfa">OpenRouter</text>
+
+  <rect x="800" y="365" width="180" height="40" rx="8" fill="rgba(0,0,0,0.5)" stroke="rgba(96,165,250,0.3)" stroke-width="1"/>
+  <text x="850" y="389" font-family="sans-serif" font-size="11" fill="#60a5fa">Custom Models</text>
+
+  <!-- Arrow to Layer 5 -->
+  <line x1="600" y1="420" x2="600" y2="440" stroke="rgba(124,58,237,0.4)" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Layer 5: Data -->
+  <rect x="36" y="440" width="1128" height="70" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <rect x="36" y="440" width="140" height="70" rx="12" fill="rgba(220,38,38,0.15)"/>
+  <text x="50" y="470" font-family="sans-serif" font-size="11" fill="#ef4444" font-weight="600" transform="rotate(-90 50 470)">LAYER 5</text>
+  <text x="56" y="466" font-family="sans-serif" font-size="12" fill="#9a8ab0">Data Layer</text>
+  <text x="56" y="486" font-family="sans-serif" font-size="13" fill="#e8e0f0" font-weight="600">PostgreSQL • Redis • Vector Store • Object Storage</text>
+
+  <rect x="200" y="455" width="180" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="250" y="479" font-family="sans-serif" font-size="11" fill="#ef4444">PostgreSQL</text>
+
+  <rect x="400" y="455" width="180" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="455" y="479" font-family="sans-serif" font-size="11" fill="#ef4444">Redis Cache</text>
+
+  <rect x="600" y="455" width="180" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="645" y="479" font-family="sans-serif" font-size="11" fill="#ef4444">Vector Store</text>
+
+  <rect x="800" y="455" width="180" height="40" rx="8" fill="rgba(26,18,40,0.8)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="850" y="479" font-family="sans-serif" font-size="11" fill="#ef4444">Object Storage</text>
+
+  <!-- Data flow arrows (vertical connections between layers) -->
+  <!-- Client → Server -->
+  <line x1="280" y1="135" x2="280" y2="185" stroke="rgba(124,58,237,0.2)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="440" y1="135" x2="440" y2="185" stroke="rgba(124,58,237,0.2)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="600" y1="135" x2="600" y2="185" stroke="rgba(124,58,237,0.2)" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Bottom section: Data Flow labels -->
+  <rect x="36" y="540" width="548" height="90" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="56" y="568" font-family="sans-serif" font-size="13" fill="#e8e0f0" font-weight="600">Data Flow: Chat Request</text>
+  <text x="56" y="590" font-family="sans-serif" font-size="11" fill="#9a8ab0">User Input → Server Action → Chat Service → AI Provider → Stream Response</text>
+  <text x="56" y="610" font-family="sans-serif" font-size="11" fill="#9a8ab0">                                                                        → History (PG) → Cache (Redis)</text>
+
+  <rect x="604" y="540" width="560" height="90" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="624" y="568" font-family="sans-serif" font-size="13" fill="#e8e0f0" font-weight="600">Data Flow: Knowledge Retrieval</text>
+  <text x="624" y="590" font-family="sans-serif" font-size="11" fill="#9a8ab0">Query → Embedding → Vector DB Similarity → Document Retrieval</text>
+  <text x="624" y="610" font-family="sans-serif" font-size="11" fill="#9a8ab0">                                                               → Context Assembly → LLM Response</text>
+
+  <!-- Bottom metadata -->
+  <rect x="36" y="650" width="1128" height="80" rx="12" fill="rgba(26,18,40,0.6)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="56" y="678" font-family="sans-serif" font-size="13" fill="#e8e0f0" font-weight="600">Key Architecture Decisions</text>
+  <circle cx="62" cy="698" r="3" fill="#7c3aed"/>
+  <text x="72" y="701" font-family="sans-serif" font-size="11" fill="#9a8ab0">RSC-first rendering — maximize server-side computation</text>
+  <circle cx="262" cy="698" r="3" fill="#3b82f6"/>
+  <text x="272" y="701" font-family="sans-serif" font-size="11" fill="#9a8ab0">Streaming throughout — AI provider to UI</text>
+  <circle cx="462" cy="698" r="3" fill="#22c55e"/>
+  <text x="472" y="701" font-family="sans-serif" font-size="11" fill="#9a8ab0">Unified AI provider interface</text>
+  <circle cx="662" cy="698" r="3" fill="#f59e0b"/>
+  <text x="672" y="701" font-family="sans-serif" font-size="11" fill="#9a8ab0">Zod validation at all boundaries</text>
+  <circle cx="862" cy="698" r="3" fill="#ef4444"/>
+  <text x="872" y="701" font-family="sans-serif" font-size="11" fill="#9a8ab0">Server Actions over API routes for mutations</text>
+</svg>
